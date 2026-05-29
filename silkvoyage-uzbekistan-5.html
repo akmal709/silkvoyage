@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SilkVoyage — Luxury Uzbekistan Tours & Silk Road Journeys</title>
+<meta name="description" content="Award-winning Uzbekistan tour operator. Luxury Silk Road journeys through Samarkand, Bukhara & Khiva. Private guides, boutique stays, 4.9★ rated. Book with local experts.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.silkvoyage.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SilkVoyage — Where the Silk Road Comes Alive">
+<meta property="og:description" content="Curated luxury journeys across Uzbekistan's ancient cities. Private guides, boutique riads, unforgettable memories.">
+<meta property="og:image" content="https://images.unsplash.com/hvLu3ABC1n0?w=1200&q=85">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"SilkVoyage","url":"https://www.silkvoyage.com","telephone":"+998702250212","email":"akmaldavlatyarov5@gmail.com","address":{"@type":"PostalAddress","streetAddress":"15 Amir Temur Shoh St","addressLocality":"Tashkent","addressCountry":"UZ"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"347"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   SILKVOYAGE — PREMIUM REDESIGN
+   Design Direction: "Archaeology of Luxury" — deep jewel tones,
+   editorial typographic hierarchy, cinematic photography,
+   confident whitespace, tactile card textures.
+   Inspired by: Aman Resorts, Condé Nast Traveler, Lonely Planet
+═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Core Palette — deep, jewel-rich, never flat */
+  --ink:        #0f0d0a;       /* near-black warm */
+  --obsidian:   #1c1814;       /* card darks */
+  --bark:       #2e2620;       /* rich brown */
+  --lapis:      #1b4d6e;       /* deep Silk Road blue */
+  --lapis-mid:  #2a6d96;
+  --lapis-light:#e8f2f8;
+  --gold:       #b8892a;       /* aged gold */
+  --gold-warm:  #d4a843;
+  --gold-pale:  #fdf5e4;
+  --saffron:    #e06b1a;       /* spice accent */
+  --terra:      #8c3a1f;       /* terracotta deep */
+  --sand:       #e8dfc8;
+  --parchment:  #f9f5ed;       /* warm off-white */
+  --cream:      #fdfaf4;
+  --white:      #ffffff;
+  --muted:      #8a8070;
+  --border:     #e2d9c8;
+
+  /* Typography Scale */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-serif:   'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Spacing */
+  --nav-h: 72px;
+  --section-pad: clamp(80px, 10vw, 130px);
+  --gutter: clamp(5%, 8vw, 10%);
+
+  /* Shadows */
+  --shadow-card: 0 2px 20px rgba(15,13,10,0.08), 0 8px 40px rgba(15,13,10,0.06);
+  --shadow-hover: 0 8px 40px rgba(15,13,10,0.15), 0 20px 60px rgba(15,13,10,0.1);
+  --shadow-float: 0 24px 80px rgba(15,13,10,0.22);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--parchment); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+/* ── SCROLL PROGRESS ── */
+#prog {
+  position:fixed; top:0; left:0; height:2px; width:0;
+  background:linear-gradient(90deg,var(--saffron),var(--gold-warm),var(--lapis-mid));
+  z-index:9999; transition:width .08s linear;
+}
+
+/* ── SKIP LINK ── */
+.skip { position:absolute; top:-60px; left:1rem; background:var(--gold); color:var(--white); padding:10px 18px; border-radius:2px; text-decoration:none; font-size:.82rem; z-index:9999; transition:top .3s; }
+.skip:focus { top:1rem; }
+
+/* ══════════ NAV ══════════ */
+nav {
+  position:fixed; top:0; left:0; width:100%; z-index:1000;
+  height:var(--nav-h);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 var(--gutter);
+  transition:background .5s, box-shadow .5s, border-bottom .5s;
+}
+nav::after {
+  content:'';
+  position:absolute; bottom:0; left:5%; right:5%;
+  height:1px; background:rgba(255,255,255,0.12);
+  transition:opacity .5s;
+}
+nav.scrolled {
+  background:rgba(15,13,10,0.97);
+  backdrop-filter:blur(20px) saturate(180%);
+  -webkit-backdrop-filter:blur(20px);
+  box-shadow:0 1px 0 rgba(255,255,255,0.06);
+}
+nav.scrolled::after { opacity:0; }
+
+.nav-brand {
+  display:flex; align-items:center; gap:12px;
+  text-decoration:none;
+}
+.nav-logo-gem {
+  width:34px; height:34px; position:relative;
+  display:flex; align-items:center; justify-content:center;
+}
+.nav-logo-gem svg { width:34px; height:34px; }
+.nav-wordmark {
+  font-family:var(--font-display);
+  font-size:1.55rem; font-weight:500;
+  color:var(--white); letter-spacing:0.02em;
+  line-height:1;
+}
+.nav-wordmark em { font-style:normal; color:var(--gold-warm); }
+
+.nav-center {
+  display:flex; align-items:center; gap:0.2rem;
+  list-style:none;
+}
+.nav-center a {
+  color:rgba(255,255,255,0.78);
+  text-decoration:none; font-size:.78rem;
+  letter-spacing:.1em; text-transform:uppercase; font-weight:500;
+  padding:8px 14px; border-radius:2px;
+  transition:color .25s, background .25s;
+  position:relative;
+}
+.nav-center a::after {
+  content:''; position:absolute; bottom:4px; left:50%; right:50%;
+  height:1px; background:var(--gold-warm);
+  transition:left .3s, right .3s;
+}
+.nav-center a:hover { color:var(--white); }
+.nav-center a:hover::after { left:14px; right:14px; }
+
+.nav-right { display:flex; align-items:center; gap:1rem; }
+.lang-toggle {
+  display:flex; gap:2px;
+  background:rgba(255,255,255,0.08);
+  border-radius:3px; padding:3px;
+}
+.lang-btn {
+  background:none; border:none; cursor:pointer;
+  font-family:var(--font-body); font-size:.7rem; font-weight:500;
+  letter-spacing:.08em; padding:4px 9px; border-radius:2px;
+  color:rgba(255,255,255,0.55); transition:all .25s;
+}
+.lang-btn.on { background:var(--gold); color:var(--white); }
+.lang-btn:hover:not(.on) { color:var(--white); background:rgba(255,255,255,0.1); }
+
+.nav-book {
+  background:var(--gold); color:var(--ink) !important;
+  padding:10px 22px; border-radius:2px; font-weight:600 !important;
+  font-size:.75rem !important; letter-spacing:.14em !important;
+  transition:background .25s, transform .2s !important;
+  border:none; cursor:pointer; text-decoration:none !important;
+  font-family:var(--font-body); display:inline-block;
+}
+.nav-book::after { display:none !important; }
+.nav-book:hover { background:var(--gold-warm) !important; transform:translateY(-1px); }
+
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:6px; background:none; border:none; }
+.hamburger span { display:block; width:24px; height:1.5px; background:var(--white); transition:.35s; transform-origin:center; }
+
+/* ══════════ MOBILE MENU ══════════ */
+.mob-menu {
+  position:fixed; inset:0; z-index:990;
+  background:var(--obsidian);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:2rem;
+  transform:translateX(100%); transition:transform .45s cubic-bezier(.77,0,.175,1);
+}
+.mob-menu.open { transform:translateX(0); }
+.mob-menu a {
+  font-family:var(--font-display);
+  font-size:2.8rem; font-weight:400; font-style:italic;
+  color:rgba(255,255,255,0.85); text-decoration:none;
+  transition:color .25s;
+}
+.mob-menu a:hover { color:var(--gold-warm); }
+.mob-menu .mob-cta {
+  margin-top:1rem; font-style:normal;
+  background:var(--gold); color:var(--ink);
+  padding:14px 40px; font-size:1rem; border-radius:2px;
+  font-family:var(--font-body); font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+}
+
+/* ══════════ HERO ══════════ */
+.hero {
+  position:relative; height:100dvh; min-height:680px;
+  display:grid; align-items:end;
+  overflow:hidden;
+}
+
+/* Cinematic photo layer */
+.hero-film {
+  position:absolute; inset:0; overflow:hidden;
+}
+.hero-film img {
+  width:100%; height:100%; object-fit:cover;
+  object-position:center 30%;
+  transform:scale(1.06);
+  animation:filmDrift 18s ease-in-out infinite alternate;
+  will-change:transform;
+}
+@keyframes filmDrift {
+  from { transform:scale(1.06) translate(0,0); }
+  to   { transform:scale(1.12) translate(-1%,-0.5%); }
+}
+
+/* Cinematic grade overlay */
+.hero-grade {
+  position:absolute; inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(15,13,10,0.2) 0%,
+      rgba(15,13,10,0.05) 35%,
+      rgba(15,13,10,0.55) 65%,
+      rgba(15,13,10,0.92) 100%),
+    radial-gradient(ellipse at 70% 40%, rgba(27,77,110,0.25) 0%, transparent 60%);
+}
+
+/* Grain texture */
+.hero-grain {
+  position:absolute; inset:0; opacity:0.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+
+/* Silk Road ornament line */
+.hero-ornament {
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,
+    transparent 0%,
+    var(--saffron) 20%,
+    var(--gold-warm) 50%,
+    var(--lapis-mid) 80%,
+    transparent 100%);
+  opacity:0.7;
+}
+
+.hero-body {
+  position:relative; z-index:2;
+  padding:0 var(--gutter) clamp(60px,9vw,110px);
+  display:grid; grid-template-columns:1fr auto;
+  align-items:end; gap:4rem;
+}
+
+.hero-text { max-width:780px; }
+
+.hero-kicker {
+  display:inline-flex; align-items:center; gap:10px;
+  margin-bottom:1.6rem;
+  opacity:0; animation:riseIn .9s .2s forwards;
+}
+.hero-kicker-line { width:36px; height:1px; background:var(--gold-warm); }
+.hero-kicker-text {
+  font-size:.7rem; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--gold-warm); font-weight:500;
+}
+
+.hero-h1 {
+  font-family:var(--font-display);
+  font-size:clamp(3rem,6.5vw,7.5rem);
+  font-weight:400; line-height:1.05;
+  color:var(--white);
+  opacity:0; animation:riseIn 1.1s .35s forwards;
+}
+.hero-h1 .italic { font-style:italic; color:var(--gold-warm); }
+.hero-h1 .outline {
+  -webkit-text-stroke:1px rgba(255,255,255,0.5);
+  color:transparent;
+}
+
+.hero-sub {
+  font-size:clamp(.95rem,1.5vw,1.15rem);
+  color:rgba(255,255,255,0.7); font-weight:300;
+  line-height:1.85; max-width:520px;
+  margin-top:1.5rem;
+  opacity:0; animation:riseIn 1.1s .5s forwards;
+}
+
+.hero-actions {
+  display:flex; gap:1rem; margin-top:2.5rem; flex-wrap:wrap; align-items:center;
+  opacity:0; animation:riseIn 1.1s .65s forwards;
+}
+
+.btn-gold {
+  display:inline-flex; align-items:center; gap:10px;
+  background:var(--gold); color:var(--ink);
+  padding:15px 34px; border-radius:2px;
+  font-family:var(--font-body); font-size:.78rem;
+  font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  text-decoration:none; transition:all .3s; border:2px solid var(--gold);
+  cursor:pointer;
+}
+.btn-gold:hover { background:var(--gold-warm); border-color:var(--gold-warm); transform:translateY(-2px); box-shadow:0 8px 28px rgba(184,137,42,0.45); }
+.btn-gold .arrow { transition:transform .3s; }
+.btn-gold:hover .arrow { transform:translateX(4px); }
+
+.btn-ghost {
+  display:inline-flex; align-items:center; gap:10px;
+  background:transparent; color:rgba(255,255,255,0.85);
+  padding:15px 34px; border-radius:2px;
+  font-family:var(--font-body); font-size:.78rem;
+  font-weight:500; letter-spacing:.14em; text-transform:uppercase;
+  text-decoration:none; transition:all .3s;
+  border:1.5px solid rgba(255,255,255,0.3); cursor:pointer;
+}
+.btn-ghost:hover { border-color:rgba(255,255,255,0.7); color:var(--white); background:rgba(255,255,255,0.06); }
+
+/* Hero side stats */
+.hero-aside {
+  display:flex; flex-direction:column; gap:2rem; padding-bottom:4px;
+  opacity:0; animation:riseIn 1.1s .8s forwards;
+}
+.hero-stat { text-align:right; }
+.hero-stat-n {
+  font-family:var(--font-display);
+  font-size:clamp(2.2rem,3vw,3.2rem); font-weight:400;
+  color:var(--gold-warm); line-height:1;
+}
+.hero-stat-l {
+  font-size:.65rem; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(255,255,255,0.45); margin-top:4px;
+}
+.hero-stat-divider { width:100%; height:1px; background:rgba(255,255,255,0.1); }
+
+/* Scroll indicator */
+.hero-scroll {
+  position:absolute; bottom:36px; left:50%;
+  transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+  opacity:0; animation:riseIn 1s 1.4s forwards; z-index:2;
+}
+.hero-scroll span { font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,0.35); }
+.scroll-line { width:1px; height:40px; background:linear-gradient(to bottom,rgba(255,255,255,0.4),transparent); animation:scrollPulse 2s infinite; }
+@keyframes scrollPulse { 0%,100%{opacity:.4} 50%{opacity:1} }
+
+@keyframes riseIn {
+  from { opacity:0; transform:translateY(22px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ══════════ SEARCH BAR ══════════ */
+.search-wrap {
+  position:relative; z-index:10;
+  margin-top:-34px; padding:0 var(--gutter);
+}
+.search-pill {
+  background:var(--white);
+  border-radius:4px;
+  box-shadow:var(--shadow-float);
+  display:flex; align-items:stretch;
+  max-width:860px;
+  border:1px solid var(--border);
+  border-bottom:3px solid var(--gold);
+  overflow:hidden;
+}
+.s-field {
+  flex:1; padding:18px 22px;
+  border-right:1px solid var(--border);
+  min-width:0;
+}
+.s-field:last-of-type { border-right:none; }
+.s-label {
+  font-size:.62rem; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold); font-weight:600; margin-bottom:5px;
+}
+.s-field select, .s-field input {
+  width:100%; border:none; outline:none;
+  font-family:var(--font-body); font-size:.9rem; color:var(--ink);
+  background:transparent; cursor:pointer;
+}
+.s-btn {
+  background:var(--ink); color:var(--white); border:none;
+  padding:0 30px; cursor:pointer;
+  font-family:var(--font-body); font-size:.72rem;
+  letter-spacing:.16em; text-transform:uppercase; font-weight:600;
+  transition:background .3s; display:flex; align-items:center; gap:8px;
+  white-space:nowrap;
+}
+.s-btn:hover { background:var(--lapis); }
+
+/* ══════════ TRUST BAR ══════════ */
+.trust-bar {
+  background:var(--obsidian);
+  padding:14px var(--gutter);
+  display:flex; align-items:center; justify-content:center;
+  gap:clamp(1.5rem,4vw,4rem); flex-wrap:wrap;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.trust-item {
+  display:flex; align-items:center; gap:9px;
+  font-size:.72rem; letter-spacing:.06em;
+  color:rgba(255,255,255,0.55); white-space:nowrap;
+}
+.trust-icon { font-size:.95rem; }
+.trust-item strong { color:rgba(255,255,255,0.82); font-weight:500; }
+
+/* ══════════ SECTION BASE ══════════ */
+.section { padding:var(--section-pad) var(--gutter); }
+.section-bg-parchment { background:var(--parchment); }
+.section-bg-dark { background:var(--obsidian); }
+.section-bg-cream { background:var(--cream); }
+.section-bg-lapis { background:var(--lapis); }
+
+.eyebrow {
+  display:inline-flex; align-items:center; gap:12px;
+  font-size:.68rem; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--gold); font-weight:600; margin-bottom:1rem;
+}
+.eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--gold); }
+.eyebrow.light { color:var(--gold-warm); }
+.eyebrow.light::before { background:var(--gold-warm); }
+.eyebrow.center { justify-content:center; }
+.eyebrow.center::before { display:none; }
+
+.display-title {
+  font-family:var(--font-display);
+  font-size:clamp(2.2rem,4vw,4.2rem);
+  font-weight:400; line-height:1.1; color:var(--ink);
+}
+.display-title em { font-style:italic; color:var(--gold); }
+.display-title.white { color:var(--white); }
+.display-title.white em { color:var(--gold-warm); }
+
+.body-lead {
+  font-size:clamp(1rem,1.4vw,1.1rem);
+  color:var(--muted); line-height:1.85; font-weight:300;
+  max-width:540px; margin-top:1.2rem;
+}
+.body-lead.centered { margin:1.2rem auto 0; text-align:center; }
+.body-lead.light { color:rgba(255,255,255,0.6); }
+
+/* ══════════ WHY UZBEKISTAN ══════════ */
+.why-layout {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:clamp(3rem,6vw,8rem); align-items:center;
+}
+.why-media { position:relative; }
+.why-img-main {
+  width:100%; aspect-ratio:3/4; object-fit:cover;
+  border-radius:3px; display:block;
+  box-shadow:var(--shadow-float);
+}
+.why-img-float {
+  position:absolute; bottom:-28px; right:-28px;
+  width:52%; aspect-ratio:4/3; object-fit:cover;
+  border-radius:3px; border:5px solid var(--parchment);
+  box-shadow:var(--shadow-hover); display:block;
+  loading:lazy;
+}
+.why-badge-pill {
+  position:absolute; top:28px; left:-20px;
+  background:var(--gold); color:var(--ink);
+  padding:20px 22px; border-radius:3px;
+  text-align:center; box-shadow:0 8px 30px rgba(184,137,42,0.4);
+}
+.why-badge-n { font-family:var(--font-display); font-size:2.8rem; font-weight:400; line-height:1; }
+.why-badge-l { font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; font-weight:600; margin-top:3px; }
+
+.why-features {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:1.8rem; margin-top:3rem;
+}
+.why-feat {
+  display:flex; gap:14px; align-items:flex-start;
+}
+.why-feat-icon {
+  width:42px; height:42px; flex-shrink:0;
+  border:1.5px solid var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.1rem; border-radius:2px;
+  background:var(--gold-pale);
+}
+.why-feat h4 {
+  font-family:var(--font-display); font-size:1.1rem; font-weight:500;
+  color:var(--ink); margin-bottom:3px;
+}
+.why-feat p { font-size:.82rem; color:var(--muted); line-height:1.6; }
+.why-feat-text { flex:1; }
+
+/* ══════════ DESTINATIONS ══════════ */
+.dest-mosaic {
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-template-rows:auto auto;
+  gap:12px; margin-top:3.5rem;
+}
+.dest-tile {
+  position:relative; overflow:hidden; border-radius:3px;
+  cursor:pointer; text-decoration:none; display:block;
+}
+.dest-tile:nth-child(1) { grid-column:1/6; grid-row:1/2; }
+.dest-tile:nth-child(2) { grid-column:6/9; grid-row:1/2; }
+.dest-tile:nth-child(3) { grid-column:9/13; grid-row:1/2; }
+.dest-tile:nth-child(4) { grid-column:1/5; grid-row:2/3; }
+.dest-tile:nth-child(5) { grid-column:5/9; grid-row:2/3; }
+.dest-tile:nth-child(6) { grid-column:9/13; grid-row:2/3; }
+
+.dest-tile img {
+  width:100%; object-fit:cover; display:block;
+  transition:transform .7s cubic-bezier(.25,.46,.45,.94);
+}
+.dest-tile:nth-child(1) img { height:420px; }
+.dest-tile:nth-child(2) img,
+.dest-tile:nth-child(3) img { height:420px; }
+.dest-tile:nth-child(4) img,
+.dest-tile:nth-child(5) img,
+.dest-tile:nth-child(6) img { height:260px; }
+
+.dest-tile:hover img { transform:scale(1.07); }
+
+.dest-shade {
+  position:absolute; inset:0;
+  background:linear-gradient(to top, rgba(15,13,10,.88) 0%, rgba(15,13,10,.15) 55%, transparent 100%);
+}
+.dest-info {
+  position:absolute; bottom:0; left:0; right:0;
+  padding:24px 22px;
+}
+.dest-tag {
+  font-size:.62rem; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--gold-warm); margin-bottom:5px; font-weight:600;
+}
+.dest-name {
+  font-family:var(--font-display);
+  color:var(--white); line-height:1.05;
+}
+.dest-tile:nth-child(1) .dest-name { font-size:2.6rem; }
+.dest-tile:nth-child(2) .dest-name,
+.dest-tile:nth-child(3) .dest-name { font-size:1.8rem; }
+.dest-tile:nth-child(4) .dest-name,
+.dest-tile:nth-child(5) .dest-name,
+.dest-tile:nth-child(6) .dest-name { font-size:1.5rem; }
+
+.dest-sub {
+  font-size:.8rem; color:rgba(255,255,255,0.65);
+  margin-top:4px; line-height:1.5;
+  max-height:0; overflow:hidden;
+  transition:max-height .4s ease, opacity .4s;
+  opacity:0;
+}
+.dest-tile:hover .dest-sub { max-height:60px; opacity:1; }
+
+.dest-arrow {
+  position:absolute; top:18px; right:18px;
+  width:36px; height:36px; border-radius:50%;
+  background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--white); font-size:1rem;
+  opacity:0; transform:scale(0.8);
+  transition:all .3s;
+}
+.dest-tile:hover .dest-arrow { opacity:1; transform:scale(1); background:var(--gold); border-color:var(--gold); }
+
+/* ══════════ TOURS ══════════ */
+.tours-tabs-row {
+  display:flex; gap:0; flex-wrap:wrap;
+  border-bottom:1px solid var(--border);
+  margin-bottom:3rem;
+}
+.t-tab {
+  padding:12px 22px; background:none; border:none; cursor:pointer;
+  font-family:var(--font-body); font-size:.72rem;
+  letter-spacing:.14em; text-transform:uppercase; font-weight:500;
+  color:var(--muted); border-bottom:2px solid transparent;
+  margin-bottom:-1px; transition:all .25s;
+}
+.t-tab:hover { color:var(--ink); }
+.t-tab.on { color:var(--gold); border-bottom-color:var(--gold); }
+
+.tours-grid {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:2rem;
+}
+.tour-card {
+  background:var(--white); border-radius:4px;
+  overflow:hidden; text-decoration:none; color:inherit;
+  box-shadow:var(--shadow-card);
+  transition:transform .35s cubic-bezier(.25,.46,.45,.94), box-shadow .35s;
+  display:flex; flex-direction:column;
+  border:1px solid var(--border);
+  position:relative;
+}
+.tour-card.featured-card {
+  outline:2px solid var(--gold); outline-offset:0;
+}
+.tour-card.featured-card::before {
+  content:'Most Popular';
+  position:absolute; top:-1px; left:50%; transform:translateX(-50%);
+  background:var(--gold); color:var(--ink);
+  font-size:.58rem; letter-spacing:.16em; text-transform:uppercase;
+  padding:4px 16px; border-radius:0 0 3px 3px; z-index:3;
+  font-family:var(--font-body); font-weight:700;
+}
+.tour-card:hover { transform:translateY(-7px); box-shadow:var(--shadow-hover); }
+
+.tour-img-wrap { position:relative; overflow:hidden; }
+.tour-img {
+  width:100%; height:230px; object-fit:cover; display:block;
+  transition:transform .6s cubic-bezier(.25,.46,.45,.94);
+}
+.tour-card:hover .tour-img { transform:scale(1.06); }
+
+.tour-chip {
+  position:absolute; top:14px; left:14px;
+  background:var(--ink); color:var(--white);
+  font-size:.6rem; letter-spacing:.14em; text-transform:uppercase;
+  padding:5px 11px; border-radius:2px; font-weight:600;
+  backdrop-filter:blur(8px);
+}
+.tour-chip.lux { background:var(--gold); color:var(--ink); }
+.tour-chip.adv { background:var(--lapis); }
+.tour-chip.cul { background:var(--saffron); }
+.tour-chip.fam { background:#4a7c59; }
+
+.tour-scarcity {
+  position:absolute; top:14px; right:14px;
+  background:rgba(140,58,31,0.9);
+  color:var(--white); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase;
+  padding:4px 10px; border-radius:2px; font-weight:600;
+  backdrop-filter:blur(6px);
+}
+
+.tour-body { padding:22px 22px 16px; flex:1; }
+.tour-meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:9px; }
+.tour-dur { font-size:.72rem; color:var(--muted); letter-spacing:.04em; }
+.tour-stars { color:var(--gold); font-size:.75rem; }
+.tour-title {
+  font-family:var(--font-display); font-size:1.4rem; font-weight:500;
+  color:var(--ink); line-height:1.2; margin-bottom:8px;
+}
+.tour-desc { font-size:.83rem; color:var(--muted); line-height:1.7; }
+
+.tour-foot {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 22px 18px; border-top:1px solid var(--border);
+}
+.tour-price-from { font-size:.62rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+.tour-price-num { font-family:var(--font-display); font-size:1.9rem; color:var(--ink); line-height:1; }
+.tour-price-pp { font-size:.68rem; color:var(--muted); }
+
+.btn-outline-sm {
+  background:none; border:1.5px solid var(--gold); color:var(--gold);
+  padding:9px 18px; border-radius:2px; cursor:pointer;
+  font-family:var(--font-body); font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; font-weight:600;
+  transition:all .25s;
+}
+.btn-outline-sm:hover { background:var(--gold); color:var(--ink); }
+
+/* ══════════ EXPERIENCES ══════════ */
+.exp-grid {
+  display:grid; grid-template-columns:repeat(5,1fr);
+  gap:10px; margin-top:4rem;
+}
+.exp-card {
+  position:relative; border-radius:3px; overflow:hidden;
+  height:500px; cursor:pointer;
+  transition:flex .5s ease;
+}
+.exp-card img {
+  width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .6s ease;
+}
+.exp-card:hover img { transform:scale(1.08); }
+.exp-veil {
+  position:absolute; inset:0;
+  background:linear-gradient(to top, rgba(15,13,10,.9) 0%, rgba(27,77,110,.2) 60%, transparent 100%);
+  transition:background .4s;
+}
+.exp-card:hover .exp-veil {
+  background:linear-gradient(to top, rgba(27,77,110,.88) 0%, rgba(27,77,110,.4) 60%, transparent 100%);
+}
+.exp-body {
+  position:absolute; bottom:0; left:0; right:0; padding:22px 18px;
+}
+.exp-num {
+  font-family:var(--font-display); font-size:2.2rem;
+  color:rgba(255,255,255,0.12); line-height:1; margin-bottom:6px;
+}
+.exp-title {
+  font-family:var(--font-display); font-size:1.3rem;
+  color:var(--white); margin-bottom:6px;
+}
+.exp-desc {
+  font-size:.78rem; color:rgba(255,255,255,0.65); line-height:1.6;
+  max-height:0; overflow:hidden; transition:max-height .4s ease;
+}
+.exp-card:hover .exp-desc { max-height:80px; }
+
+/* ══════════ SEASONS ══════════ */
+.seasons-row {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:1.5rem; margin-top:3.5rem;
+}
+.season-card {
+  background:var(--white); border-radius:3px; padding:2.5rem 2rem;
+  text-align:center; border-top:3px solid var(--border);
+  transition:transform .3s, box-shadow .3s;
+  box-shadow:var(--shadow-card);
+}
+.season-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-hover); }
+.season-card.sp { border-top-color:#6ab04c; }
+.season-card.su { border-top-color:var(--saffron); }
+.season-card.au { border-top-color:var(--gold); }
+.season-card.wi { border-top-color:var(--lapis-mid); }
+.season-icon { font-size:2.2rem; margin-bottom:1rem; }
+.season-name { font-family:var(--font-display); font-size:1.5rem; color:var(--ink); margin-bottom:.4rem; }
+.season-months { font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:1rem; }
+.season-desc { font-size:.85rem; color:var(--ink); line-height:1.7; }
+.season-pill {
+  display:inline-block; margin-top:1rem;
+  font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600;
+  padding:5px 14px; border-radius:20px;
+}
+.season-card.sp .season-pill { background:#edf7e5; color:#3d7a28; }
+.season-card.su .season-pill { background:#fef1e8; color:var(--saffron); }
+.season-card.au .season-pill { background:var(--gold-pale); color:var(--gold); }
+.season-card.wi .season-pill { background:var(--lapis-light); color:var(--lapis); }
+
+/* ══════════ GALLERY ══════════ */
+.gallery-outer { padding:var(--section-pad) 0; background:var(--obsidian); }
+.gallery-header { padding:0 var(--gutter) 3rem; display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem; }
+.gallery-scroll {
+  display:flex; gap:10px; overflow-x:auto; padding:0 var(--gutter) 2rem;
+  scroll-snap-type:x mandatory; scroll-padding:0 var(--gutter);
+  -ms-overflow-style:none; scrollbar-width:none;
+}
+.gallery-scroll::-webkit-scrollbar { display:none; }
+.g-item { flex-shrink:0; scroll-snap-align:start; position:relative; border-radius:3px; overflow:hidden; cursor:pointer; }
+.g-item img { display:block; height:400px; object-fit:cover; transition:transform .5s; }
+.g-item:nth-child(1) img, .g-item:nth-child(4) img { width:280px; }
+.g-item:nth-child(2) img, .g-item:nth-child(5) img { width:420px; }
+.g-item:nth-child(3) img, .g-item:nth-child(6) img { width:340px; }
+.g-item:hover img { transform:scale(1.05); }
+.g-cap {
+  position:absolute; bottom:0; left:0; right:0; padding:14px 16px;
+  background:linear-gradient(transparent,rgba(15,13,10,.75));
+  color:rgba(255,255,255,.8); font-size:.72rem; letter-spacing:.08em;
+  opacity:0; transition:opacity .3s;
+}
+.g-item:hover .g-cap { opacity:1; }
+
+/* ══════════ TESTIMONIALS ══════════ */
+.testi-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:2rem; margin-top:3.5rem;
+}
+.testi-card {
+  background:var(--white); border-radius:3px; padding:2.5rem;
+  box-shadow:var(--shadow-card); border:1px solid var(--border);
+  transition:transform .3s, box-shadow .3s;
+}
+.testi-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-hover); }
+.testi-q {
+  font-family:var(--font-display); font-size:3.5rem; line-height:.7;
+  color:var(--gold); opacity:.35; margin-bottom:1rem; display:block;
+}
+.testi-body {
+  font-family:var(--font-display); font-style:italic; font-size:1.12rem;
+  color:var(--ink); line-height:1.75; margin-bottom:1.5rem;
+}
+.testi-stars { color:var(--gold); font-size:.8rem; margin-bottom:1rem; letter-spacing:.1em; }
+.testi-person { display:flex; align-items:center; gap:12px; }
+.testi-avatar { width:46px; height:46px; border-radius:50%; object-fit:cover; }
+.testi-name { font-weight:600; font-size:.88rem; color:var(--ink); }
+.testi-from { font-size:.75rem; color:var(--muted); }
+
+/* ══════════ BLOG ══════════ */
+.blog-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:2rem; margin-top:3.5rem; }
+.blog-card { text-decoration:none; color:inherit; display:block; cursor:pointer; }
+.blog-img-wrap { overflow:hidden; border-radius:3px; }
+.blog-img { width:100%; object-fit:cover; display:block; transition:transform .5s ease; }
+.blog-card:hover .blog-img { transform:scale(1.04); }
+.blog-card:nth-child(1) .blog-img { height:360px; }
+.blog-card:nth-child(2) .blog-img, .blog-card:nth-child(3) .blog-img { height:190px; }
+.blog-meta-row { display:flex; gap:12px; margin:14px 0 8px; align-items:center; }
+.blog-cat { font-size:.65rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:600; }
+.blog-dot { width:3px; height:3px; border-radius:50%; background:var(--muted); }
+.blog-date { font-size:.7rem; color:var(--muted); }
+.blog-title { font-family:var(--font-display); color:var(--ink); line-height:1.25; }
+.blog-card:nth-child(1) .blog-title { font-size:1.9rem; }
+.blog-card:nth-child(2) .blog-title, .blog-card:nth-child(3) .blog-title { font-size:1.35rem; }
+.blog-snip { font-size:.84rem; color:var(--muted); line-height:1.7; margin-top:8px; }
+.blog-read { display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); font-weight:600; transition:gap .25s; }
+.blog-card:hover .blog-read { gap:10px; }
+
+/* ══════════ BOOKING CTA ══════════ */
+.book-cta {
+  position:relative; padding:var(--section-pad) var(--gutter);
+  text-align:center; overflow:hidden; background:var(--lapis);
+}
+.book-cta-bg {
+  position:absolute; inset:0;
+  background:url('https://images.unsplash.com/hvLu3ABC1n0?w=1600&q=80') center/cover;
+  opacity:.12;
+}
+.book-cta-grain {
+  position:absolute; inset:0; opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.book-inner { position:relative; z-index:1; max-width:700px; margin:0 auto; }
+.book-inner .display-title { font-size:clamp(2.6rem,5vw,5.5rem); }
+.book-lead { color:rgba(255,255,255,.7); font-size:1.05rem; line-height:1.85; font-weight:300; margin:1.4rem 0 2.8rem; }
+
+.quick-form {
+  display:grid; grid-template-columns:1fr 1fr 1fr auto;
+  gap:.8rem; text-align:left; max-width:800px; margin:0 auto;
+}
+.qf-group label {
+  display:block; font-size:.62rem; letter-spacing:.14em; text-transform:uppercase;
+  color:rgba(255,255,255,.55); margin-bottom:6px; font-weight:600;
+}
+.qf-group select, .qf-group input {
+  width:100%; background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.2); border-radius:2px;
+  color:var(--white); padding:12px 14px;
+  font-family:var(--font-body); font-size:.88rem; outline:none;
+  transition:border-color .25s;
+}
+.qf-group select option { background:var(--obsidian); color:var(--white); }
+.qf-group input::placeholder { color:rgba(255,255,255,.35); }
+.qf-group select:focus, .qf-group input:focus { border-color:var(--gold-warm); }
+.qf-submit {
+  align-self:end; background:var(--gold); color:var(--ink); border:none;
+  padding:13px 26px; border-radius:2px; cursor:pointer;
+  font-family:var(--font-body); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:700;
+  transition:background .25s; white-space:nowrap;
+}
+.qf-submit:hover { background:var(--gold-warm); }
+
+/* ══════════ NEWSLETTER ══════════ */
+.nl-section {
+  background:var(--parchment);
+  padding:clamp(60px,8vw,100px) var(--gutter);
+  text-align:center; position:relative; overflow:hidden;
+}
+.nl-section::before {
+  content:'✦ ✦ ✦'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  font-size:14rem; letter-spacing:6rem;
+  color:var(--sand); pointer-events:none; white-space:nowrap;
+  font-family:var(--font-display); line-height:1;
+}
+.nl-inner { position:relative; z-index:1; max-width:540px; margin:0 auto; }
+.nl-inner .display-title { font-size:clamp(2rem,3.5vw,3.2rem); }
+.nl-row { display:flex; gap:0; max-width:440px; margin:2rem auto 0; border:1.5px solid var(--border); border-radius:3px; overflow:hidden; }
+.nl-input { flex:1; border:none; outline:none; padding:14px 18px; font-family:var(--font-body); font-size:.9rem; color:var(--ink); background:var(--white); }
+.nl-input::placeholder { color:var(--muted); }
+.nl-btn { background:var(--ink); color:var(--white); border:none; padding:14px 22px; cursor:pointer; font-family:var(--font-body); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; transition:background .25s; white-space:nowrap; }
+.nl-btn:hover { background:var(--gold); color:var(--ink); }
+.nl-note { font-size:.68rem; color:var(--muted); margin-top:12px; }
+
+/* ══════════ CONTACT ══════════ */
+.contact-layout { display:grid; grid-template-columns:1fr 1.4fr; gap:clamp(3rem,6vw,8rem); align-items:start; }
+.contact-aside h3 { font-family:var(--font-display); font-size:clamp(1.8rem,2.5vw,2.5rem); color:var(--ink); margin-bottom:1.4rem; line-height:1.2; }
+.contact-lead { font-size:.95rem; color:var(--muted); line-height:1.8; font-weight:300; margin-bottom:2.5rem; }
+.cinfo { display:flex; gap:14px; margin-bottom:2rem; }
+.cinfo-icon { width:46px; height:46px; flex-shrink:0; background:var(--gold-pale); border:1px solid var(--sand); display:flex; align-items:center; justify-content:center; font-size:1.1rem; border-radius:2px; }
+.cinfo-label { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:4px; font-weight:600; }
+.cinfo-val { font-size:.92rem; color:var(--ink); line-height:1.5; }
+.cinfo-val a { color:var(--lapis); text-decoration:none; }
+.cinfo-val a:hover { color:var(--gold); }
+
+.c-form { background:var(--white); border-radius:4px; padding:clamp(2rem,4vw,3.5rem); box-shadow:var(--shadow-float); border:1px solid var(--border); }
+.c-form h3 { font-family:var(--font-display); font-size:1.7rem; color:var(--ink); margin-bottom:.4rem; }
+.c-form-sub { font-size:.84rem; color:var(--muted); margin-bottom:2rem; }
+.cf-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
+.cf-span { grid-column:span 2; }
+.cf-group { display:flex; flex-direction:column; }
+.cf-group label { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; font-weight:600; }
+.cf-group input, .cf-group select, .cf-group textarea {
+  border:1.5px solid var(--border); border-radius:2px;
+  padding:12px 14px; font-family:var(--font-body); font-size:.9rem;
+  color:var(--ink); outline:none; transition:border-color .25s, background .25s;
+  background:var(--cream);
+}
+.cf-group textarea { resize:vertical; min-height:100px; }
+.cf-group input:focus, .cf-group select:focus, .cf-group textarea:focus { border-color:var(--gold); background:var(--white); }
+.cf-submit {
+  width:100%; margin-top:1.5rem;
+  background:var(--ink); color:var(--white); border:none;
+  padding:16px; border-radius:2px; cursor:pointer;
+  font-family:var(--font-body); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; font-weight:700;
+  transition:background .25s, transform .2s;
+}
+.cf-submit:hover { background:var(--lapis); transform:translateY(-2px); }
+
+/* ══════════ FOOTER ══════════ */
+footer {
+  background:var(--ink); color:rgba(255,255,255,.55);
+  padding:clamp(60px,8vw,90px) var(--gutter) clamp(30px,4vw,50px);
+}
+.footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:4rem; padding-bottom:50px; border-bottom:1px solid rgba(255,255,255,.07); }
+.footer-brand-logo { font-family:var(--font-display); font-size:2rem; color:var(--white); text-decoration:none; display:block; margin-bottom:1.2rem; }
+.footer-brand-logo em { font-style:normal; color:var(--gold-warm); }
+.footer-brand-desc { font-size:.85rem; line-height:1.8; max-width:270px; }
+.footer-social { display:flex; gap:8px; margin-top:1.5rem; }
+.soc-btn {
+  width:36px; height:36px; border:1px solid rgba(255,255,255,.15);
+  display:flex; align-items:center; justify-content:center;
+  text-decoration:none; color:rgba(255,255,255,.5); font-size:.85rem;
+  border-radius:2px; transition:all .25s;
+}
+.soc-btn:hover { border-color:var(--gold-warm); color:var(--gold-warm); }
+.footer-col h4 { font-family:var(--font-display); font-size:1.15rem; color:var(--white); margin-bottom:1.2rem; font-weight:500; }
+.footer-col ul { list-style:none; }
+.footer-col ul li { margin-bottom:.6rem; }
+.footer-col ul li a { color:rgba(255,255,255,.45); text-decoration:none; font-size:.84rem; transition:color .25s; }
+.footer-col ul li a:hover { color:var(--gold-warm); }
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; padding-top:28px; flex-wrap:wrap; gap:1rem; }
+.footer-bottom p { font-size:.76rem; }
+.footer-bottom-links { display:flex; gap:1.5rem; }
+.footer-bottom-links a { font-size:.76rem; color:rgba(255,255,255,.3); text-decoration:none; transition:color .25s; }
+.footer-bottom-links a:hover { color:var(--gold-warm); }
+.silk-bar { height:3px; background:linear-gradient(90deg, var(--terra) 0%, var(--gold) 33%, var(--lapis-mid) 66%, var(--lapis-light) 100%); }
+
+/* ══════════ FLOATING ELEMENTS ══════════ */
+.wa-float {
+  position:fixed; bottom:28px; right:28px; z-index:999;
+  width:54px; height:54px; background:#25D366; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  text-decoration:none; color:var(--white); font-size:1.5rem;
+  box-shadow:0 4px 20px rgba(37,211,102,.45);
+  animation:waPulse 2.5s ease-in-out infinite;
+  transition:transform .3s;
+}
+.wa-float:hover { transform:scale(1.1); }
+@keyframes waPulse {
+  0%,100% { box-shadow:0 4px 20px rgba(37,211,102,.45); }
+  50% { box-shadow:0 4px 32px rgba(37,211,102,.7); }
+}
+.wa-float-tip {
+  position:absolute; right:64px; top:50%; transform:translateY(-50%);
+  background:var(--obsidian); color:var(--white);
+  padding:6px 12px; border-radius:3px; font-size:.72rem; white-space:nowrap;
+  opacity:0; pointer-events:none; transition:opacity .25s;
+}
+.wa-float:hover .wa-float-tip { opacity:1; }
+
+.back-top {
+  position:fixed; bottom:96px; right:28px; z-index:998;
+  width:42px; height:42px; background:var(--obsidian);
+  border:1px solid rgba(255,255,255,.12); border-radius:2px;
+  display:flex; align-items:center; justify-content:center;
+  color:rgba(255,255,255,.65); font-size:1rem; text-decoration:none;
+  opacity:0; transform:translateY(8px); transition:all .3s; cursor:pointer;
+}
+.back-top.vis { opacity:1; transform:translateY(0); }
+.back-top:hover { background:var(--gold); color:var(--ink); border-color:var(--gold); }
+
+/* ══════════ LIGHTBOX ══════════ */
+.lbx {
+  position:fixed; inset:0; z-index:2000; background:rgba(0,0,0,.96);
+  display:none; align-items:center; justify-content:center;
+}
+.lbx.on { display:flex; }
+.lbx img { max-width:90vw; max-height:90vh; object-fit:contain; border-radius:2px; }
+.lbx-x {
+  position:absolute; top:20px; right:24px;
+  background:none; border:none; color:rgba(255,255,255,.7);
+  font-size:1.8rem; cursor:pointer; line-height:1; padding:4px;
+  transition:color .25s;
+}
+.lbx-x:hover { color:var(--white); }
+
+/* ══════════ COOKIE ══════════ */
+.cookie {
+  position:fixed; bottom:0; left:0; right:0; z-index:8000;
+  background:var(--obsidian); border-top:2px solid var(--gold);
+  padding:16px var(--gutter);
+  display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;
+  transform:translateY(100%); transition:transform .4s ease;
+}
+.cookie.show { transform:translateY(0); }
+.cookie p { font-size:.82rem; color:rgba(255,255,255,.65); line-height:1.6; flex:1; }
+.cookie p a { color:var(--gold-warm); }
+.cookie-btns { display:flex; gap:.8rem; }
+.c-accept {
+  background:var(--gold); color:var(--ink); border:none;
+  padding:9px 22px; border-radius:2px; cursor:pointer;
+  font-family:var(--font-body); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:700;
+  transition:background .25s;
+}
+.c-accept:hover { background:var(--gold-warm); }
+.c-decline {
+  background:none; border:1px solid rgba(255,255,255,.2);
+  color:rgba(255,255,255,.5); padding:9px 18px; border-radius:2px;
+  cursor:pointer; font-family:var(--font-body); font-size:.72rem; transition:all .25s;
+}
+.c-decline:hover { border-color:rgba(255,255,255,.4); color:rgba(255,255,255,.7); }
+
+/* ══════════ FOCUS / ACCESSIBILITY ══════════ */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline:2px solid var(--gold-warm); outline-offset:3px;
+}
+
+/* ══════════ RESPONSIVE ══════════ */
+@media (max-width:1100px) {
+  .why-layout { grid-template-columns:1fr; }
+  .why-media { display:none; }
+  .exp-grid { grid-template-columns:repeat(3,1fr); }
+  .tours-grid { grid-template-columns:repeat(2,1fr); }
+  .footer-top { grid-template-columns:1fr 1fr; gap:2.5rem; }
+  .quick-form { grid-template-columns:1fr 1fr; }
+  .qf-submit { grid-column:span 2; }
+  .dest-mosaic { gap:8px; }
+  .dest-tile:nth-child(1) img, .dest-tile:nth-child(2) img, .dest-tile:nth-child(3) img { height:320px; }
+}
+@media (max-width:860px) {
+  .hero-body { grid-template-columns:1fr; }
+  .hero-aside { display:none; }
+  .dest-mosaic { grid-template-columns:repeat(2,1fr); }
+  .dest-tile:nth-child(1) { grid-column:span 2; grid-row:auto; }
+  .dest-tile:nth-child(2), .dest-tile:nth-child(3) { grid-column:span 1; }
+  .dest-tile:nth-child(4), .dest-tile:nth-child(5), .dest-tile:nth-child(6) { grid-column:span 1; }
+  .testi-grid { grid-template-columns:1fr 1fr; }
+  .blog-grid { grid-template-columns:1fr; }
+  .contact-layout { grid-template-columns:1fr; gap:3rem; }
+  .exp-grid { grid-template-columns:repeat(2,1fr); }
+  .seasons-row { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:640px) {
+  .nav-center { display:none; }
+  .hamburger { display:flex; }
+  .trust-bar { gap:1.2rem; justify-content:flex-start; overflow-x:auto; flex-wrap:nowrap; }
+  .hero-h1 { font-size:2.8rem; }
+  .dest-mosaic { grid-template-columns:1fr; }
+  .dest-tile:nth-child(1) { grid-column:span 1; }
+  .dest-tile:nth-child(1) img { height:320px; }
+  .dest-tile:nth-child(2) img, .dest-tile:nth-child(3) img { height:240px; }
+  .tours-grid { grid-template-columns:1fr; }
+  .testi-grid { grid-template-columns:1fr; }
+  .exp-grid { grid-template-columns:1fr; }
+  .exp-card { height:320px; }
+  .seasons-row { grid-template-columns:1fr; }
+  .quick-form { grid-template-columns:1fr; }
+  .qf-submit { grid-column:span 1; }
+  .cf-grid { grid-template-columns:1fr; }
+  .cf-span { grid-column:span 1; }
+  .footer-top { grid-template-columns:1fr; gap:2rem; }
+  .footer-bottom { flex-direction:column; align-items:flex-start; }
+  .nl-row { flex-direction:column; border:none; }
+  .nl-input, .nl-btn { border:1.5px solid var(--border); border-radius:2px; width:100%; }
+  .nl-btn { padding:14px; }
+  .wa-float { bottom:16px; right:16px; }
+  .back-top { bottom:82px; right:16px; }
+  .search-pill { flex-direction:column; }
+  .s-field { border-right:none; border-bottom:1px solid var(--border); }
+  .s-btn { padding:18px; justify-content:center; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+<div id="prog"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-brand" aria-label="SilkVoyage home">
+    <div class="nav-logo-gem">
+      <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="17,2 32,17 17,32 2,17" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+        <polygon points="17,7 27,17 17,27 7,17" stroke="#d4a843" stroke-width="1" fill="rgba(212,168,67,0.15)"/>
+        <circle cx="17" cy="17" r="3" fill="#d4a843"/>
+      </svg>
+    </div>
+    <span class="nav-wordmark">Silk<em>Voyage</em></span>
+  </a>
+  <ul class="nav-center" role="list">
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#tours">Tours</a></li>
+    <li><a href="#experiences">Experiences</a></li>
+    <li><a href="#about">About UZ</a></li>
+    <li><a href="#blog">Journal</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle" role="group" aria-label="Language selection">
+      <button class="lang-btn on" aria-pressed="true">EN</button>
+      <button class="lang-btn" aria-pressed="false">RU</button>
+      <button class="lang-btn" aria-pressed="false">UZ</button>
+    </div>
+    <a href="#contact" class="nav-book">Book Now</a>
+    <button class="hamburger" id="ham" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#destinations" onclick="closeMob()">Destinations</a>
+  <a href="#tours" onclick="closeMob()">Tours</a>
+  <a href="#experiences" onclick="closeMob()">Experiences</a>
+  <a href="#about" onclick="closeMob()">About UZ</a>
+  <a href="#blog" onclick="closeMob()">Journal</a>
+  <a href="#contact" class="mob-cta" onclick="closeMob()">Book Your Journey</a>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="home" role="banner">
+  <div class="hero-film">
+    <img
+      src="https://images.unsplash.com/hvLu3ABC1n0?w=1800&q=90"
+      alt="Registan Square at dusk, Samarkand, Uzbekistan"
+      fetchpriority="high"
+      decoding="async">
+  </div>
+  <div class="hero-grade"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-ornament"></div>
+
+  <div class="hero-body">
+    <div class="hero-text">
+      <div class="hero-kicker">
+        <div class="hero-kicker-line"></div>
+        <span class="hero-kicker-text">Central Asia's Greatest Wonder</span>
+      </div>
+      <h1 class="hero-h1">
+        Where the<br>
+        <span class="italic">Silk Road</span><br>
+        <span class="outline">Still Lives</span>
+      </h1>
+      <p class="hero-sub">Journey through 2,500 years of history. Turquoise domes, golden deserts, and the legendary hospitality of Uzbekistan — all crafted into journeys that last a lifetime.</p>
+      <div class="hero-actions">
+        <a href="#tours" class="btn-gold">Explore Tours <span class="arrow">→</span></a>
+        <a href="#experiences" class="btn-ghost">▶ Watch Our Story</a>
+      </div>
+    </div>
+    <div class="hero-aside">
+      <div class="hero-stat">
+        <div class="hero-stat-n" data-target="7">7</div>
+        <div class="hero-stat-l">UNESCO Sites</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-n" data-target="2500">2500+</div>
+        <div class="hero-stat-l">Years of History</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-n" data-target="347">347</div>
+        <div class="hero-stat-l">Five-Star Reviews</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════ SEARCH ══════════ -->
+<div class="search-wrap" id="main">
+  <div class="search-pill" role="search" aria-label="Tour search">
+    <div class="s-field">
+      <div class="s-label">Destination</div>
+      <select aria-label="Select destination">
+        <option>All Uzbekistan</option>
+        <option>Samarkand</option>
+        <option>Bukhara</option>
+        <option>Khiva</option>
+        <option>Tashkent</option>
+        <option>Fergana Valley</option>
+        <option>Aral Sea</option>
+      </select>
+    </div>
+    <div class="s-field">
+      <div class="s-label">Travel Date</div>
+      <input type="date" aria-label="Select travel date">
+    </div>
+    <div class="s-field">
+      <div class="s-label">Tour Type</div>
+      <select aria-label="Select tour type">
+        <option>Any Style</option>
+        <option>Classic Silk Road</option>
+        <option>Luxury Private</option>
+        <option>Adventure & Trek</option>
+        <option>Cultural & Culinary</option>
+        <option>Family Tour</option>
+      </select>
+    </div>
+    <button class="s-btn" aria-label="Search tours">🔍 Search Tours</button>
+  </div>
+</div>
+
+<!-- ══════════ TRUST BAR ══════════ -->
+<div class="trust-bar" role="complementary" aria-label="Trust signals">
+  <div class="trust-item"><span class="trust-icon">🏆</span><strong>TripAdvisor</strong> Certificate of Excellence 2024</div>
+  <div class="trust-item"><span class="trust-icon">⭐</span><strong>4.9/5</strong> · 347 Verified Reviews</div>
+  <div class="trust-item"><span class="trust-icon">✈️</span><strong>Licensed</strong> Uzbekistan Tour Operator</div>
+  <div class="trust-item"><span class="trust-icon">🛡️</span><strong>100%</strong> Money-Back Guarantee</div>
+  <div class="trust-item"><span class="trust-icon">💬</span><strong>24/7</strong> WhatsApp Support</div>
+</div>
+
+<!-- ══════════ WHY UZBEKISTAN ══════════ -->
+<section class="section section-bg-dark" id="about" aria-label="Why Uzbekistan">
+  <div class="why-layout">
+    <div class="why-text">
+      <p class="eyebrow light">Why Uzbekistan</p>
+      <h2 class="display-title white">A World Like<br><em>No Other</em></h2>
+      <p class="body-lead light">Uzbekistan is Central Asia's crown jewel — a land where the ancient Silk Road comes alive through magnificent Islamic architecture, vibrant bazaars, and a culture that has welcomed travellers for millennia.</p>
+      <div class="why-features">
+        <div class="why-feat">
+          <div class="why-feat-icon">🕌</div>
+          <div class="why-feat-text">
+            <h4>UNESCO Heritage</h4>
+            <p>7 World Heritage Sites including the legendary Registan of Samarkand.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">🍽️</div>
+          <div class="why-feat-text">
+            <h4>Extraordinary Cuisine</h4>
+            <p>Plov, samsa, lagman — UNESCO-listed flavors of the ancient road.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">🏔️</div>
+          <div class="why-feat-text">
+            <h4>Stunning Landscapes</h4>
+            <p>Tian Shan peaks, Kyzylkum Desert, and the haunting Aral Sea.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">🛡️</div>
+          <div class="why-feat-text">
+            <h4>Safe & Welcoming</h4>
+            <p>Central Asia's most tourist-friendly destination with genuine warmth.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">✈️</div>
+          <div class="why-feat-text">
+            <h4>Easy Access</h4>
+            <p>Visa-free for 90+ countries. Direct flights from Europe & Gulf.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon">💰</div>
+          <div class="why-feat-text">
+            <h4>Exceptional Value</h4>
+            <p>World-class experiences at a fraction of European prices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-media">
+      <img src="https://images.unsplash.com/QaxdKj5E2kM?w=700&q=85" alt="Registan Square domes, Samarkand Uzbekistan" class="why-img-main" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1559752359-7f0e65a54b93?w=400&q=80" alt="Kalon Minaret, Bukhara old city, Uzbekistan" class="why-img-float" loading="lazy" decoding="async">
+      <div class="why-badge-pill">
+        <div class="why-badge-n">4.9</div>
+        <div class="why-badge-l">Rated by Guests</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ DESTINATIONS ══════════ -->
+<section class="section section-bg-cream" id="destinations" aria-label="Destinations">
+  <p class="eyebrow">Where to Go</p>
+  <h2 class="display-title">Iconic <em>Destinations</em></h2>
+  <p class="body-lead">From the turquoise domes of Samarkand to the ghostly shores of the Aral Sea — each corner of Uzbekistan tells a story thousands of years in the making.</p>
+
+  <div class="dest-mosaic">
+    <a href="#contact" class="dest-tile" aria-label="Explore Samarkand">
+      <img src="https://images.unsplash.com/QaxdKj5E2kM?w=900&q=85" alt="Registan Square, Samarkand — the iconic 15th-century Timurid architectural ensemble" loading="lazy" decoding="async">
+      <div class="dest-shade"></div>
+      <div class="dest-info">
+        <div class="dest-tag">Most Popular · UNESCO</div>
+        <div class="dest-name">Samarkand</div>
+        <div class="dest-sub">The Pearl of the Orient — home to the legendary Registan, Shah-i-Zinda necropolis, and Bibi-Khanym mosque.</div>
+      </div>
+      <div class="dest-arrow" aria-hidden="true">→</div>
+    </a>
+    <a href="#contact" class="dest-tile" aria-label="Explore Bukhara">
+      <img src="https://images.unsplash.com/photo-1559752359-7f0e65a54b93?w=500&q=80" alt="Kalon Minaret and mosque, Bukhara UNESCO World Heritage City, Uzbekistan" loading="lazy" decoding="async">
+      <div class="dest-shade"></div>
+      <div class="dest-info">
+        <div class="dest-tag">UNESCO · Living Museum</div>
+        <div class="dest-name">Bukhara</div>
+        <div class="dest-sub">The soul of Central Asia — 140 architectural monuments still in use today.</div>
+      </div>
+      <div class="dest-arrow" aria-hidden="true">→</div>
+    </a>
+    <a href="#contact" class="dest-tile" aria-label="Explore Khiva">
+      <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&q=80" alt="Kalta Minor minaret, Khiva Itchan Kala fortress city, Uzbekistan" loading="lazy" decoding="async">
+      <div class="dest-shade"></div>
+      <div class="dest-info">
+        <div class="dest-tag">Walled City · UNESCO</div>
+        <div class="dest-name">Khiva</div>
+        <div class="dest-sub">A perfectly preserved medieval fortress — the world's most intact Silk Road city.</div>
+      </div>
+      <div class="dest-arrow" aria-hidden="true">→</div>
+    </a>
+    <a href="#contact" class="dest-tile" aria-label="Explore Tashkent">
+      <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f11?w=500&q=80" alt="Chorsu Bazaar dome, Tashkent capital city, Uzbekistan" loading="lazy" decoding="async">
+      <div class="dest-shade"></div>
+      <div class="dest-info">
+        <div class="dest-tag">Capital City</div>
+        <div class="dest-name">Tashkent</div>
+        <div class="dest-sub">Modern & ancient side by side — grand bazaars, metro mosaics, world-class dining.</div>
+      </div>
+      <div class="dest-arrow" aria-hidden="true">→</div>
+    </a>
+    <a href="#contact" class="dest-tile" aria-label="Explore Fergana Valley">
+      <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=500&q=80" alt="Silk and craft bazaar, Fergana Valley artisan region, Uzbekistan" loading="lazy" decoding="async">
+      <div class="dest-shade"></div>
+      <div class="dest-info">
+        <div class="dest-tag">Silk & Crafts</div>
+        <div class="dest-name">Fergana Valley</div>
+        <div class="dest-sub">Where master weavers still craft ikat silk by hand, unchanged for centuries.</div>
+      </div>
+      <div class="dest-arrow" aria-hidden="true">→</div>
+    </a>
+    <a href="#contact" class="dest-tile" aria-label="Explore Aral Sea">
+      <img src="https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=500&q=80" alt="Abandoned ships in the dried Aral Sea desert, Muynak, Uzbekistan" loading="lazy" decoding="async">
+      <div class="dest-shade"></div>
+      <div class="dest-info">
+        <div class="dest-tag">Unique Wonder</div>
+        <div class="dest-name">Aral Sea</div>
+        <div class="dest-sub">Eerie, haunting, unforgettable — rusted ships on an ocean of white salt.</div>
+      </div>
+      <div class="dest-arrow" aria-hidden="true">→</div>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════ TOURS ══════════ -->
+<section class="section section-bg-parchment" id="tours" aria-label="Tours and packages">
+  <p class="eyebrow">Handcrafted Journeys</p>
+  <h2 class="display-title">Tours &<br><em>Packages</em></h2>
+  <p class="body-lead">Every itinerary is crafted by our local Uzbekistan experts — not generated by an algorithm.</p>
+
+  <div style="margin-top:3rem;">
+    <div class="tours-tabs-row" role="tablist" aria-label="Tour categories">
+      <button class="t-tab on" onclick="filterTours(this,'all')" role="tab" aria-selected="true">All Tours</button>
+      <button class="t-tab" onclick="filterTours(this,'classic')" role="tab" aria-selected="false">Classic</button>
+      <button class="t-tab" onclick="filterTours(this,'luxury')" role="tab" aria-selected="false">Luxury</button>
+      <button class="t-tab" onclick="filterTours(this,'adventure')" role="tab" aria-selected="false">Adventure</button>
+      <button class="t-tab" onclick="filterTours(this,'cultural')" role="tab" aria-selected="false">Cultural</button>
+      <button class="t-tab" onclick="filterTours(this,'family')" role="tab" aria-selected="false">Family</button>
+    </div>
+    <div class="tours-grid" id="toursGrid">
+
+      <a href="#contact" class="tour-card featured-card" data-type="classic">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/hvLu3ABC1n0?w=600&q=80" alt="Classic Silk Road journey through Uzbekistan's four great cities" class="tour-img" loading="lazy" decoding="async">
+          <div class="tour-chip">Classic</div>
+          <div class="tour-scarcity">🔥 3 spots left</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-meta">
+            <span class="tour-dur">⏱ 10 Days · 9 Nights</span>
+            <span class="tour-stars">★★★★★ 4.9</span>
+          </div>
+          <h3 class="tour-title">Classic Silk Road Journey</h3>
+          <p class="tour-desc">Tashkent → Samarkand → Bukhara → Khiva. The legendary route through Uzbekistan's four great ancient cities, guided by our local experts.</p>
+        </div>
+        <div class="tour-foot">
+          <div>
+            <div class="tour-price-from">from</div>
+            <div class="tour-price-num">$990</div>
+            <div class="tour-price-pp">/person</div>
+          </div>
+          <button class="btn-outline-sm">Enquire Now</button>
+        </div>
+      </a>
+
+      <a href="#contact" class="tour-card" data-type="luxury">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/CyYne8EUn0A?w=600&q=80" alt="Luxury Silk Road private tour, Samarkand madrasa interiors" class="tour-img" loading="lazy" decoding="async">
+          <div class="tour-chip lux">Luxury</div>
+          <div class="tour-scarcity">⚡ Oct fills fast</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-meta">
+            <span class="tour-dur">⏱ 12 Days · 11 Nights</span>
+            <span class="tour-stars">★★★★★ 5.0</span>
+          </div>
+          <h3 class="tour-title">Silk Road in Luxury</h3>
+          <p class="tour-desc">Boutique riads, private guides, exclusive candlelit dinners inside historical madrasas, and after-hours VIP site access.</p>
+        </div>
+        <div class="tour-foot">
+          <div>
+            <div class="tour-price-from">from</div>
+            <div class="tour-price-num">$2,490</div>
+            <div class="tour-price-pp">/person</div>
+          </div>
+          <button class="btn-outline-sm">Enquire Now</button>
+        </div>
+      </a>
+
+      <a href="#contact" class="tour-card" data-type="adventure">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=600&q=80" alt="Desert adventure and Aral Sea expedition, Uzbekistan" class="tour-img" loading="lazy" decoding="async">
+          <div class="tour-chip adv">Adventure</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-meta">
+            <span class="tour-dur">⏱ 9 Days · 8 Nights</span>
+            <span class="tour-stars">★★★★★ 4.8</span>
+          </div>
+          <h3 class="tour-title">Desert, Mountains & Seas</h3>
+          <p class="tour-desc">Yurt camping in the Kyzylkum Desert, trekking the Nuratau range, and the ghostly Aral Sea ship graveyard.</p>
+        </div>
+        <div class="tour-foot">
+          <div>
+            <div class="tour-price-from">from</div>
+            <div class="tour-price-num">$1,190</div>
+            <div class="tour-price-pp">/person</div>
+          </div>
+          <button class="btn-outline-sm">Enquire Now</button>
+        </div>
+      </a>
+
+      <a href="#contact" class="tour-card" data-type="cultural">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&q=80" alt="Culinary and cultural tour, Uzbekistan spice bazaar and plov cooking" class="tour-img" loading="lazy" decoding="async">
+          <div class="tour-chip cul">Culinary</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-meta">
+            <span class="tour-dur">⏱ 8 Days · 7 Nights</span>
+            <span class="tour-stars">★★★★★ 4.9</span>
+          </div>
+          <h3 class="tour-title">Flavors of the Silk Road</h3>
+          <p class="tour-desc">Plov masterclasses, market tours with local chefs, intimate family dinners, and Uzbekistan's extraordinary spice bazaars.</p>
+        </div>
+        <div class="tour-foot">
+          <div>
+            <div class="tour-price-from">from</div>
+            <div class="tour-price-num">$1,050</div>
+            <div class="tour-price-pp">/person</div>
+          </div>
+          <button class="btn-outline-sm">Enquire Now</button>
+        </div>
+      </a>
+
+      <a href="#contact" class="tour-card" data-type="family">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f11?w=600&q=80" alt="Family tour Uzbekistan, Tashkent markets and craft workshops" class="tour-img" loading="lazy" decoding="async">
+          <div class="tour-chip fam">Family</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-meta">
+            <span class="tour-dur">⏱ 10 Days · 9 Nights</span>
+            <span class="tour-stars">★★★★★ 4.9</span>
+          </div>
+          <h3 class="tour-title">Family Discovery Tour</h3>
+          <p class="tour-desc">Crafted for families — interactive history lessons, craft workshops, traditional games, and village homestays that children adore.</p>
+        </div>
+        <div class="tour-foot">
+          <div>
+            <div class="tour-price-from">from</div>
+            <div class="tour-price-num">$880</div>
+            <div class="tour-price-pp">/person</div>
+          </div>
+          <button class="btn-outline-sm">Enquire Now</button>
+        </div>
+      </a>
+
+      <a href="#contact" class="tour-card" data-type="classic">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80" alt="Solo traveler tour, Khiva walled city, Uzbekistan" class="tour-img" loading="lazy" decoding="async">
+          <div class="tour-chip" style="background:var(--bark);">Solo</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-meta">
+            <span class="tour-dur">⏱ 7 Days · 6 Nights</span>
+            <span class="tour-stars">★★★★★ 5.0</span>
+          </div>
+          <h3 class="tour-title">Solo Traveler Express</h3>
+          <p class="tour-desc">Join a curated small group of solo adventurers. No single supplement. Deep connections. No compromise on quality.</p>
+        </div>
+        <div class="tour-foot">
+          <div>
+            <div class="tour-price-from">from</div>
+            <div class="tour-price-num">$790</div>
+            <div class="tour-price-pp">/person</div>
+          </div>
+          <button class="btn-outline-sm">Enquire Now</button>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:3rem;">
+    <a href="#contact" class="btn-gold" style="display:inline-flex;">View All 24 Tours <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<!-- ══════════ EXPERIENCES ══════════ -->
+<section class="section section-bg-dark" id="experiences" aria-label="Experiences">
+  <p class="eyebrow light">Beyond Sightseeing</p>
+  <h2 class="display-title white">Immersive<br><em>Experiences</em></h2>
+  <p class="body-lead light">Connect with the real Uzbekistan through encounters with its land, people, and living traditions that no guidebook can replicate.</p>
+  <div class="exp-grid">
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/QaxdKj5E2kM?w=400&q=80" alt="Ancient Silk Road trail through Samarkand and Bukhara" loading="lazy" decoding="async">
+      <div class="exp-veil"></div>
+      <div class="exp-body">
+        <div class="exp-num">01</div>
+        <div class="exp-title">Ancient Silk Road Trail</div>
+        <div class="exp-desc">Walk the very paths where Marco Polo and Ibn Battuta once traded silk, spices and stories across continents.</div>
+      </div>
+    </div>
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f11?w=400&q=80" alt="Village homestay with Uzbek family, traditional mud-brick home" loading="lazy" decoding="async">
+      <div class="exp-veil"></div>
+      <div class="exp-body">
+        <div class="exp-num">02</div>
+        <div class="exp-title">Village Homestay</div>
+        <div class="exp-desc">Spend nights with local families in mud-brick homes. Share meals, ancient folklore, and a way of life unchanged for centuries.</div>
+      </div>
+    </div>
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=400&q=80" alt="Plov cooking masterclass with Uzbek oshpaz chef in Samarkand" loading="lazy" decoding="async">
+      <div class="exp-veil"></div>
+      <div class="exp-body">
+        <div class="exp-num">03</div>
+        <div class="exp-title">Plov Masterclass</div>
+        <div class="exp-desc">Learn to cook Uzbekistan's sacred national dish over an open fire with a master oshpaz chef. UNESCO-listed culinary tradition.</div>
+      </div>
+    </div>
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/photo-1500534314209-a157d0e4d7ab?w=400&q=80" alt="Desert night camping under stars in the Kyzylkum Desert, Uzbekistan" loading="lazy" decoding="async">
+      <div class="exp-veil"></div>
+      <div class="exp-body">
+        <div class="exp-num">04</div>
+        <div class="exp-title">Desert Nights Camping</div>
+        <div class="exp-desc">Sleep under a billion stars in a yurt at the heart of the Kyzylkum Desert. Fire, tea, silence, and the Milky Way above.</div>
+      </div>
+    </div>
+    <div class="exp-card">
+      <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=400&q=80" alt="Mountain hiking in Chimgan, Uzbekistan Tian Shan range" loading="lazy" decoding="async">
+      <div class="exp-veil"></div>
+      <div class="exp-body">
+        <div class="exp-num">05</div>
+        <div class="exp-title">Mountain Hiking</div>
+        <div class="exp-desc">Trek the Chimgan mountains and Nuratau range — sweeping vistas, wildflowers, ancient petroglyphs, and crisp mountain air.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SEASONS ══════════ -->
+<section class="section section-bg-cream" aria-label="Best time to visit">
+  <div style="text-align:center;">
+    <p class="eyebrow center">When to Visit</p>
+    <h2 class="display-title" style="text-align:center;">Seasonal<br><em>Travel Guide</em></h2>
+    <p class="body-lead centered">Uzbekistan rewards every season. Here's what awaits you at each time of year.</p>
+  </div>
+  <div class="seasons-row">
+    <div class="season-card sp">
+      <div class="season-icon">🌸</div>
+      <div class="season-name">Spring</div>
+      <div class="season-months">March — May</div>
+      <p class="season-desc">The most magical season. Flowers blanket the steppe, perfect temperatures (15–25°C), and Navruz New Year celebrations fill every city.</p>
+      <span class="season-pill">⭐ Best Season</span>
+    </div>
+    <div class="season-card su">
+      <div class="season-icon">☀️</div>
+      <div class="season-name">Summer</div>
+      <div class="season-months">June — August</div>
+      <p class="season-desc">Hot and golden (35–40°C), but perfect for early-morning monument visits. Ripe melons, sweet grapes, and long amber evenings.</p>
+      <span class="season-pill">🍉 Harvest Season</span>
+    </div>
+    <div class="season-card au">
+      <div class="season-icon">🍂</div>
+      <div class="season-name">Autumn</div>
+      <div class="season-months">September — November</div>
+      <p class="season-desc">Golden light on turquoise domes. Pomegranate season, harvest festivals, and perfect 20–28°C temperatures for exploring.</p>
+      <span class="season-pill">⭐ Best Season</span>
+    </div>
+    <div class="season-card wi">
+      <div class="season-icon">❄️</div>
+      <div class="season-name">Winter</div>
+      <div class="season-months">December — February</div>
+      <p class="season-desc">Few tourists, snow-dusted monuments of extraordinary beauty, and unique photography. Ski season in Chimgan mountains.</p>
+      <span class="season-pill">📸 Unique Photos</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GALLERY ══════════ -->
+<div class="gallery-outer" aria-label="Photo gallery">
+  <div class="gallery-header">
+    <div>
+      <p class="eyebrow light">Visual Journey</p>
+      <h2 class="display-title white">Through the <em>Lens</em></h2>
+    </div>
+    <a href="#contact" class="btn-ghost" style="white-space:nowrap;">View Full Gallery →</a>
+  </div>
+  <div class="gallery-scroll" role="list">
+    <div class="g-item" role="listitem" onclick="openLbx(this)" tabindex="0" aria-label="Registan Square Samarkand photo">
+      <img src="https://images.unsplash.com/hvLu3ABC1n0?w=500&q=80" alt="Registan Square at golden hour, Samarkand" loading="lazy" decoding="async">
+      <div class="g-cap">Registan Square, Samarkand</div>
+    </div>
+    <div class="g-item" role="listitem" onclick="openLbx(this)" tabindex="0" aria-label="Samarkand blue dome photo">
+      <img src="https://images.unsplash.com/QaxdKj5E2kM?w=600&q=80" alt="Blue mosaic dome, Samarkand" loading="lazy" decoding="async">
+      <div class="g-cap">Gur-e-Amir Mausoleum, Samarkand</div>
+    </div>
+    <div class="g-item" role="listitem" onclick="openLbx(this)" tabindex="0" aria-label="Bukhara Kalon Minaret photo">
+      <img src="https://images.unsplash.com/photo-1559752359-7f0e65a54b93?w=500&q=80" alt="Kalon minaret and mosque, ancient Bukhara" loading="lazy" decoding="async">
+      <div class="g-cap">Kalon Minaret, Bukhara</div>
+    </div>
+    <div class="g-item" role="listitem" onclick="openLbx(this)" tabindex="0" aria-label="Khiva walled city photo">
+      <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&q=80" alt="Kalta Minor minaret at sunset, Khiva" loading="lazy" decoding="async">
+      <div class="g-cap">Kalta Minor, Khiva</div>
+    </div>
+    <div class="g-item" role="listitem" onclick="openLbx(this)" tabindex="0" aria-label="Kyzylkum Desert night sky photo">
+      <img src="https://images.unsplash.com/photo-1500534314209-a157d0e4d7ab?w=600&q=80" alt="Milky Way over the Kyzylkum Desert, Uzbekistan" loading="lazy" decoding="async">
+      <div class="g-cap">Kyzylkum Desert — Night Sky</div>
+    </div>
+    <div class="g-item" role="listitem" onclick="openLbx(this)" tabindex="0" aria-label="Samarkand tilework detail photo">
+      <img src="https://images.unsplash.com/CyYne8EUn0A?w=500&q=80" alt="Intricate 14th-century Islamic tilework, Samarkand" loading="lazy" decoding="async">
+      <div class="g-cap">Tilework detail, 14th century</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section class="section section-bg-parchment" aria-label="Traveler testimonials">
+  <div style="text-align:center;">
+    <p class="eyebrow center">Traveler Stories</p>
+    <h2 class="display-title" style="text-align:center;">What Our Guests<br><em>Say</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <span class="testi-q">"</span>
+      <p class="testi-body">Uzbekistan completely overwhelmed my senses in the most beautiful way. The Registan at night, under floodlights, with barely another soul around — I still get chills. SilkVoyage made every single moment seamless.</p>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-person">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah M., traveler from London" class="testi-avatar" loading="lazy" decoding="async">
+        <div>
+          <div class="testi-name">Sarah M.</div>
+          <div class="testi-from">London, UK — October 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <span class="testi-q">"</span>
+      <p class="testi-body">As a solo female traveller I was nervous about Central Asia. But Uzbekistan is incredibly welcoming and safe. My guide Dilshod was like having a local friend everywhere. The cooking class in Bukhara was pure magic.</p>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-person">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80" alt="Emma T., traveler from Amsterdam" class="testi-avatar" loading="lazy" decoding="async">
+        <div>
+          <div class="testi-name">Emma T.</div>
+          <div class="testi-from">Amsterdam, Netherlands — April 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <span class="testi-q">"</span>
+      <p class="testi-body">We took our two children on the family tour and it was genuinely the best travel experience of our lives. The kids talked about the Khiva city walls for months. An exceptional, life-changing journey.</p>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-person">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Thomas & family, travelers from Paris" class="testi-avatar" loading="lazy" decoding="async">
+        <div>
+          <div class="testi-name">Thomas & Family</div>
+          <div class="testi-from">Paris, France — Spring 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BLOG ══════════ -->
+<section class="section section-bg-cream" id="blog" aria-label="Travel journal">
+  <p class="eyebrow">From the Journal</p>
+  <h2 class="display-title">Travel Stories<br>& <em>Guides</em></h2>
+  <div class="blog-grid">
+    <a href="#" class="blog-card" aria-label="Read: 72 Hours in Samarkand">
+      <div class="blog-img-wrap">
+        <img src="https://images.unsplash.com/QaxdKj5E2kM?w=700&q=80" alt="Registan Square at sunrise, Samarkand travel guide" class="blog-img" loading="lazy" decoding="async">
+      </div>
+      <div class="blog-meta-row">
+        <span class="blog-cat">Destination Guide</span>
+        <span class="blog-dot"></span>
+        <span class="blog-date">May 12, 2025</span>
+      </div>
+      <h3 class="blog-title">72 Hours in Samarkand: The Complete Traveller's Guide to the Pearl of the Orient</h3>
+      <p class="blog-snip">From the electric atmosphere of Registan at dusk to the quiet miracle of Shah-i-Zinda at dawn — everything you need to make the most of three days in Uzbekistan's most iconic city.</p>
+      <span class="blog-read">Read More →</span>
+    </a>
+    <a href="#" class="blog-card" aria-label="Read: Sleeping Under Stars in the Kyzylkum Desert">
+      <div class="blog-img-wrap">
+        <img src="https://images.unsplash.com/photo-1500534314209-a157d0e4d7ab?w=500&q=80" alt="Night sky over Kyzylkum Desert, Uzbekistan desert camping" class="blog-img" loading="lazy" decoding="async">
+      </div>
+      <div class="blog-meta-row">
+        <span class="blog-cat">Adventure</span>
+        <span class="blog-dot"></span>
+        <span class="blog-date">March 8, 2025</span>
+      </div>
+      <h3 class="blog-title">Sleeping Under a Billion Stars in the Kyzylkum Desert</h3>
+      <p class="blog-snip">What it's really like to spend a night in a yurt with Bedouin tea and the Milky Way overhead.</p>
+      <span class="blog-read">Read More →</span>
+    </a>
+    <a href="#" class="blog-card" aria-label="Read: The Art of Plov — UNESCO-listed dish">
+      <div class="blog-img-wrap">
+        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=500&q=80" alt="Uzbek plov dish, national food of Uzbekistan, UNESCO heritage" class="blog-img" loading="lazy" decoding="async">
+      </div>
+      <div class="blog-meta-row">
+        <span class="blog-cat">Food & Culture</span>
+        <span class="blog-dot"></span>
+        <span class="blog-date">January 22, 2025</span>
+      </div>
+      <h3 class="blog-title">The Art of Plov: Why Uzbekistan's National Dish is UNESCO-Listed</h3>
+      <p class="blog-snip">Rice, lamb, and sacred tradition — a deep dive into the dish that defines an entire nation.</p>
+      <span class="blog-read">Read More →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════ BOOKING CTA ══════════ -->
+<div class="book-cta" aria-label="Book your trip">
+  <div class="book-cta-bg"></div>
+  <div class="book-cta-grain"></div>
+  <div class="book-inner">
+    <p class="eyebrow light center">Ready to Journey?</p>
+    <h2 class="display-title white">Start Planning<br><em>Your Trip</em></h2>
+    <p class="book-lead">Tell us when you'd like to travel and what kind of experience you're dreaming of. Our Uzbekistan specialists will craft your perfect itinerary within 24 hours — no obligation.</p>
+    <div class="quick-form" role="form" aria-label="Quick booking enquiry">
+      <div class="qf-group">
+        <label for="qf-dest">Destination</label>
+        <select id="qf-dest">
+          <option>All Uzbekistan</option>
+          <option>Samarkand</option>
+          <option>Bukhara + Khiva</option>
+          <option>Full Country Tour</option>
+        </select>
+      </div>
+      <div class="qf-group">
+        <label for="qf-date">Travel Date</label>
+        <input type="date" id="qf-date">
+      </div>
+      <div class="qf-group">
+        <label for="qf-pax">Travellers</label>
+        <select id="qf-pax">
+          <option>1 Person</option>
+          <option>2 People</option>
+          <option>3–5 People</option>
+          <option>6–10 People</option>
+          <option>Group 10+</option>
+        </select>
+      </div>
+      <button class="qf-submit" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Quote →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ NEWSLETTER ══════════ -->
+<div class="nl-section" aria-label="Newsletter signup">
+  <div class="nl-inner">
+    <p class="eyebrow center">Stay Inspired</p>
+    <h3 class="display-title">Travel Inspiration<br><em>to Your Inbox</em></h3>
+    <p class="body-lead centered">Seasonal guides, hidden gems, and exclusive early-bird offers. No spam — ever.</p>
+    <div class="nl-row" role="form" aria-label="Newsletter email signup">
+      <input type="email" class="nl-input" placeholder="your@email.com" aria-label="Email address">
+      <button class="nl-btn" id="nlBtn" type="button">Subscribe →</button>
+    </div>
+    <p class="nl-note">Join 8,400+ travellers. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section class="section section-bg-parchment" id="contact" aria-label="Contact and booking enquiry">
+  <p class="eyebrow">Get in Touch</p>
+  <h2 class="display-title">Let's Plan Your<br><em>Adventure</em></h2>
+  <div class="contact-layout" style="margin-top:4rem;">
+    <div class="contact-aside">
+      <h3>Our Local Experts<br>Are Ready</h3>
+      <p class="contact-lead">Based in Tashkent with teams in Samarkand and Bukhara — our certified local guides and travel designers are ready to craft your perfect Uzbekistan journey. We respond within 24 hours, guaranteed.</p>
+      <div class="cinfo">
+        <div class="cinfo-icon">📍</div>
+        <div>
+          <div class="cinfo-label">Office Address</div>
+          <div class="cinfo-val">15 Amir Temur Shoh St, Tashkent<br>Uzbekistan 100000</div>
+        </div>
+      </div>
+      <div class="cinfo">
+        <div class="cinfo-icon">📱</div>
+        <div>
+          <div class="cinfo-label">WhatsApp & Phone</div>
+          <div class="cinfo-val"><a href="tel:+998702250212">+998 70 225 02 12</a></div>
+        </div>
+      </div>
+      <div class="cinfo">
+        <div class="cinfo-icon">✉️</div>
+        <div>
+          <div class="cinfo-label">Email</div>
+          <div class="cinfo-val"><a href="mailto:akmaldavlatyarov5@gmail.com">akmaldavlatyarov5@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="cinfo">
+        <div class="cinfo-icon">🕐</div>
+        <div>
+          <div class="cinfo-label">Response Time</div>
+          <div class="cinfo-val">Within 24 hours — guaranteed</div>
+        </div>
+      </div>
+    </div>
+    <div class="c-form" role="form" aria-label="Booking enquiry form">
+      <h3>Send an Enquiry</h3>
+      <p class="c-form-sub">We'll respond with a personalised itinerary within 24 hours.</p>
+      <form id="enquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="✈ New Tour Enquiry — SilkVoyage">
+        <div class="cf-grid">
+          <div class="cf-group">
+            <label for="cf-fn">First Name</label>
+            <input type="text" id="cf-fn" name="first_name" placeholder="Your first name" autocomplete="given-name" required>
+          </div>
+          <div class="cf-group">
+            <label for="cf-ln">Last Name</label>
+            <input type="text" id="cf-ln" name="last_name" placeholder="Your last name" autocomplete="family-name" required>
+          </div>
+          <div class="cf-group">
+            <label for="cf-em">Email</label>
+            <input type="email" id="cf-em" name="email" placeholder="your@email.com" autocomplete="email" required>
+          </div>
+          <div class="cf-group">
+            <label for="cf-ph">Phone / WhatsApp</label>
+            <input type="tel" id="cf-ph" name="phone" placeholder="+1 234 567 890" autocomplete="tel">
+          </div>
+          <div class="cf-group">
+            <label for="cf-tour">Preferred Tour</label>
+            <select id="cf-tour" name="preferred_tour">
+              <option>Not decided yet</option>
+              <option>Classic Silk Road 10 Days</option>
+              <option>Luxury Silk Road Private</option>
+              <option>Desert & Mountains Adventure</option>
+              <option>Culinary Tour</option>
+              <option>Family Discovery Tour</option>
+              <option>Solo Traveller Express</option>
+              <option>Custom Itinerary</option>
+            </select>
+          </div>
+          <div class="cf-group">
+            <label for="cf-date">Travel Date</label>
+            <input type="date" id="cf-date" name="travel_date">
+          </div>
+          <div class="cf-group">
+            <label for="cf-pax">Number of Travellers</label>
+            <select id="cf-pax" name="travellers">
+              <option>1 – Solo</option>
+              <option>2 People</option>
+              <option>3–5 People</option>
+              <option>6–10 People</option>
+              <option>10+ Group</option>
+            </select>
+          </div>
+          <div class="cf-group">
+            <label for="cf-bud">Budget per Person</label>
+            <select id="cf-bud" name="budget">
+              <option>Budget (under $800)</option>
+              <option>Mid-range ($800–$1,500)</option>
+              <option>Premium ($1,500–$2,500)</option>
+              <option>Luxury ($2,500+)</option>
+            </select>
+          </div>
+          <div class="cf-group cf-span">
+            <label for="cf-msg">Your Message / Special Requests</label>
+            <textarea id="cf-msg" name="message" placeholder="Tell us about your dream trip — interests, dietary needs, celebrations, or anything special we should know about…"></textarea>
+          </div>
+        </div>
+        <button class="cf-submit" type="submit" id="cf-submit-btn">Send Enquiry — We Respond in 24h ✦</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<div class="silk-bar"></div>
+<footer role="contentinfo">
+  <div class="footer-top">
+    <div>
+      <a href="#" class="footer-brand-logo">Silk<em>Voyage</em></a>
+      <p class="footer-brand-desc">Your trusted local partner for authentic, immersive journeys through Uzbekistan and the ancient Silk Road. Based in Tashkent since 2015.</p>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="#" class="soc-btn" title="Instagram" aria-label="Instagram">📸</a>
+        <a href="#" class="soc-btn" title="Facebook" aria-label="Facebook">f</a>
+        <a href="#" class="soc-btn" title="YouTube" aria-label="YouTube">▶</a>
+        <a href="#" class="soc-btn" title="TripAdvisor" aria-label="TripAdvisor">🦉</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="#">Samarkand</a></li>
+        <li><a href="#">Bukhara</a></li>
+        <li><a href="#">Khiva</a></li>
+        <li><a href="#">Tashkent</a></li>
+        <li><a href="#">Fergana Valley</a></li>
+        <li><a href="#">Aral Sea</a></li>
+        <li><a href="#">Chimgan Mountains</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Tours</h4>
+      <ul>
+        <li><a href="#">Classic Silk Road</a></li>
+        <li><a href="#">Luxury Private Tours</a></li>
+        <li><a href="#">Adventure & Trekking</a></li>
+        <li><a href="#">Culinary Tours</a></li>
+        <li><a href="#">Family Tours</a></li>
+        <li><a href="#">Solo Traveller</a></li>
+        <li><a href="#">Custom Itinerary</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Travel Info</h4>
+      <ul>
+        <li><a href="#">Visa Information</a></li>
+        <li><a href="#">Best Time to Visit</a></li>
+        <li><a href="#">Getting Around</a></li>
+        <li><a href="#">Health & Safety</a></li>
+        <li><a href="#">Currency & Budget</a></li>
+        <li><a href="#">What to Pack</a></li>
+        <li><a href="#">Travel Blog</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025–2026 SilkVoyage. Licensed by the Tourism Committee of Uzbekistan. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/998702250212" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <span aria-hidden="true">💬</span>
+  <div class="wa-float-tip">Chat on WhatsApp</div>
+</a>
+
+<!-- Back to top -->
+<a href="#home" class="back-top" id="backTop" aria-label="Back to top">↑</a>
+
+<!-- Lightbox -->
+<div class="lbx" id="lbx" role="dialog" aria-label="Image lightbox" onclick="closeLbx()">
+  <button class="lbx-x" onclick="closeLbx()" aria-label="Close lightbox">✕</button>
+  <img id="lbxImg" src="" alt="">
+</div>
+
+<!-- Cookie Banner -->
+<div class="cookie" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies to enhance your browsing experience and analyze traffic. <a href="#">Privacy Policy</a></p>
+  <div class="cookie-btns">
+    <button class="c-accept" onclick="acceptCookie()">Accept All</button>
+    <button class="c-decline" onclick="declineCookie()">Essential Only</button>
+  </div>
+</div>
+
+<script>
+// ── Scroll progress + nav
+const prog = document.getElementById('prog');
+const nav  = document.getElementById('nav');
+const backTop = document.getElementById('backTop');
+
+window.addEventListener('scroll', () => {
+  const st = window.scrollY;
+  const dh = document.documentElement.scrollHeight - window.innerHeight;
+  prog.style.width = (dh > 0 ? (st/dh)*100 : 0) + '%';
+  nav.classList.toggle('scrolled', st > 60);
+  backTop.classList.toggle('vis', st > 600);
+}, {passive:true});
+
+// ── Hamburger / mobile menu
+const ham = document.getElementById('ham');
+const mob = document.getElementById('mobMenu');
+ham.addEventListener('click', () => {
+  const open = mob.classList.toggle('open');
+  ham.setAttribute('aria-expanded', open);
+  const s = ham.querySelectorAll('span');
+  s[0].style.transform = open ? 'rotate(45deg) translate(5px,5px)' : '';
+  s[1].style.opacity   = open ? '0' : '1';
+  s[2].style.transform = open ? 'rotate(-45deg) translate(5px,-5px)' : '';
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+function closeMob() {
+  mob.classList.remove('open');
+  ham.setAttribute('aria-expanded','false');
+  ham.querySelectorAll('span').forEach(s => { s.style.transform=''; s.style.opacity='1'; });
+  document.body.style.overflow = '';
+}
+
+// ── Tour tab filter
+function filterTours(btn, type) {
+  document.querySelectorAll('.t-tab').forEach(t => { t.classList.remove('on'); t.setAttribute('aria-selected','false'); });
+  btn.classList.add('on'); btn.setAttribute('aria-selected','true');
+  document.querySelectorAll('.tour-card').forEach(c => {
+    c.style.display = (type==='all' || c.dataset.type===type) ? 'flex' : 'none';
+  });
+}
+
+// ── Lightbox
+function openLbx(el) {
+  const img = el.querySelector('img');
+  document.getElementById('lbxImg').src = img.src;
+  document.getElementById('lbxImg').alt = img.alt;
+  document.getElementById('lbx').classList.add('on');
+  document.body.style.overflow = 'hidden';
+}
+function closeLbx() {
+  document.getElementById('lbx').classList.remove('on');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLbx(); });
+document.querySelectorAll('.g-item').forEach(el => {
+  el.addEventListener('keydown', e => { if(e.key==='Enter') openLbx(el); });
+});
+
+// ── Intersection observer — stagger card reveals
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+      io.unobserve(e.target);
+    }
+  });
+}, {threshold:0.08});
+document.querySelectorAll('.dest-tile,.tour-card,.testi-card,.season-card,.exp-card,.blog-card,.why-feat').forEach((el,i) => {
+  el.style.opacity='0';
+  el.style.transform='translateY(28px)';
+  el.style.transition=`opacity .6s ${i*0.06}s ease, transform .6s ${i*0.06}s ease`;
+  io.observe(el);
+});
+
+// ── Animated hero counter
+function animCount(el, target, duration=1600) {
+  let start=null;
+  const step = ts => {
+    if(!start) start=ts;
+    const p = Math.min((ts-start)/duration,1);
+    const ease = 1-Math.pow(1-p,3);
+    const val = Math.floor(ease*target);
+    el.textContent = target>=1000 ? val.toLocaleString()+'+' : val;
+    if(p<1) requestAnimationFrame(step);
+    else el.textContent = el.dataset.final;
+  };
+  requestAnimationFrame(step);
+}
+const heroIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      e.target.querySelectorAll('.hero-stat-n[data-target]').forEach(n => {
+        const raw = n.textContent.trim();
+        n.dataset.final = raw;
+        const t = parseFloat(raw.replace(/[^0-9.]/g,''));
+        if(!isNaN(t)) animCount(n,t);
+      });
+      heroIO.unobserve(e.target);
+    }
+  });
+},{threshold:.5});
+const hs = document.querySelector('.hero-aside');
+if(hs) heroIO.observe(hs);
+
+// ── Language switch
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.lang-btn').forEach(b => { b.classList.remove('on'); b.setAttribute('aria-pressed','false'); });
+    this.classList.add('on'); this.setAttribute('aria-pressed','true');
+  });
+});
+
+// ── Cookie
+function showCookie() {
+  if(!localStorage.getItem('sv_cookie')) {
+    setTimeout(()=>document.getElementById('cookieBanner').classList.add('show'),2000);
+  }
+}
+function acceptCookie() { localStorage.setItem('sv_cookie','all'); document.getElementById('cookieBanner').classList.remove('show'); }
+function declineCookie() { localStorage.setItem('sv_cookie','essential'); document.getElementById('cookieBanner').classList.remove('show'); }
+showCookie();
+
+// ── Newsletter
+document.getElementById('nlBtn').addEventListener('click', function() {
+  const inp = this.previousElementSibling;
+  if(inp.value && inp.value.includes('@')) {
+    this.textContent='✓ Subscribed!'; this.style.background='#4a9e5c'; this.style.color='white';
+    inp.value='';
+    setTimeout(()=>{ this.textContent='Subscribe →'; this.style.background=''; this.style.color=''; },3500);
+  } else {
+    inp.style.borderColor='var(--terra)';
+    setTimeout(()=>inp.style.borderColor='',2000);
+  }
+});
+
+// ── Active nav on scroll
+const sectionEls = document.querySelectorAll('section[id]');
+const navLinks   = document.querySelectorAll('.nav-center a[href^="#"]');
+const navIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href')==='#'+e.target.id));
+    }
+  });
+},{threshold:.35});
+sectionEls.forEach(s=>navIO.observe(s));
+
+// ── Form submit — Formspree
+const enquiryForm = document.getElementById('enquiry-form');
+const submitBtn   = document.getElementById('cf-submit-btn');
+if (enquiryForm) {
+  enquiryForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+    try {
+      const res = await fetch(enquiryForm.action, {
+        method: 'POST',
+        body: new FormData(enquiryForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        submitBtn.textContent = '✓ Sent! We\'ll respond within 24h';
+        submitBtn.style.background = 'var(--lapis)';
+        submitBtn.style.color = '#fff';
+        enquiryForm.reset();
+        setTimeout(() => {
+          submitBtn.textContent = 'Send Enquiry — We Respond in 24h ✦';
+          submitBtn.style.background = '';
+          submitBtn.style.color = '';
+          submitBtn.disabled = false;
+        }, 6000);
+      } else { throw new Error(); }
+    } catch {
+      submitBtn.textContent = '⚠ Error — email us: akmaldavlatyarov5@gmail.com';
+      submitBtn.style.background = 'var(--terra)';
+      submitBtn.disabled = false;
+    }
+  });
+}
+</script>
+</body>
+</html>
